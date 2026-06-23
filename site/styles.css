@@ -158,6 +158,10 @@ main section {
   display: flow-root;
 }
 
+main section:first-child {
+  padding-top: var(--sep);
+}
+
 main a {
   color: var(--link-color);
   --element-color: var(--link-color);
