@@ -1,12 +1,12 @@
 # DZWeb Theme
 
-Shared HTML/CSS theme assets for DZ web sites. The repo contains reusable `hpp` templates,
-base styling, and static assets so multiple sites can keep a consistent look and feel while
-adding their own local overrides.
+Shared theme assets for DZ web sites. The repo contains the base CSS,
+reset, shared nav template, and icon attribution used by sites that want
+the same visual foundation while keeping their own page content, images,
+favicons, and site-specific templates.
 
 ## Contents
 
-- `site/hpp/*` – reusable template fragments used by hpp
-- `site/styles.css` and `site/reset.css` – shared typography/colors/layout
-- `site/attributions.txt` – icon credits and attribution text
-- `site/images/*` and icon files – shared assets
+- `site/hpp/nav.html` - reusable navigation template used by hpp
+- `site/styles.css` and `site/reset.css` - shared typography, colors, and layout
+- `site/attributions.txt` - icon credits and attribution text
