@@ -409,7 +409,7 @@ main section .work-stream {
 .academic-hero {
   grid-template-columns: minmax(10rem, var(--content-rail-width)) minmax(0, var(--content-text-width));
   column-gap: var(--content-column-gap);
-  align-items: center;
+  align-items: start;
   padding-top: 1.1rem;
 }
 
@@ -428,7 +428,7 @@ main section .academic-stream .section-label {
   margin-left: 0;
 }
 
-.academic-intro + .academic {
+main section:first-child.academic-intro + .academic {
   margin-top: 1.5rem;
 }
 
@@ -475,7 +475,7 @@ main section .academic-stream .section-label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 0;
   max-width: 20rem;
   min-height: 0;
@@ -494,6 +494,11 @@ main section .academic-stream .section-label {
   height: 7.8rem;
 }
 
+.research-entry .interests-figure img {
+  width: 100%;
+  max-height: 9rem;
+}
+
 .academic-figure figcaption {
   color: rgba(56, 59, 60, 0.72);
   font-size: 0.78rem;
@@ -505,6 +510,11 @@ main section .academic-stream .section-label {
 .academic-interests .desc {
   border-top: 1px solid rgba(56, 59, 60, 0.12);
   padding-top: 1.1rem;
+}
+
+main section:first-child.academic-interests .desc {
+  border-top: 0;
+  padding-top: 0;
 }
 
 main .academic h2 {
@@ -533,7 +543,7 @@ main section.academic h1 {
   display: grid;
   grid-template-columns: minmax(10rem, var(--content-rail-width)) minmax(0, 1fr);
   column-gap: var(--content-column-gap);
-  align-items: center;
+  align-items: start;
   margin-left: calc(0rem - var(--content-rail-width) - var(--content-column-gap));
 }
 
@@ -567,6 +577,10 @@ main section.academic h1 {
 
   .academic-interests .desc {
     border-top-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .research-entry .interests-figure img {
+    filter: invert(1);
   }
 
   .work-entry .role-meta {
@@ -661,6 +675,12 @@ main section.academic h1 {
   .research-entry .graph-figure img {
     width: 100%;
     height: auto;
+  }
+
+  .research-entry .interests-figure img {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .academic-figure figcaption {
