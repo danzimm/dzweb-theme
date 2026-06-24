@@ -156,6 +156,7 @@ nav:hover ~ main:not(:hover) {
 main {
   z-index: 1;
   margin-left: calc(var(--nav-left-margin) + var(--nav-width) + var(--main-left-margin));
+  padding-bottom: 3rem;
   transition: 0.1s filter linear;
 }
 
