@@ -8,7 +8,7 @@ and site-specific templates.
 ## Contents
 
 - `site/styles.css` and `site/reset.css` - shared typography, colors, and layout
-- `site/hpp/nav.html` - shared six-slot navigation shell
+- `site/hpp/nav.html` and `site/hpp/nav-item.html` - shared navigation shell and item renderer
 - `site/hpp/nav-icon-*.html` - shared navigation icon templates
 - `site/attributions.txt` - icon attribution for theme-owned icons
 - Generic content primitives such as `.entry`, `.details`, `.section-label`, and
@@ -17,7 +17,7 @@ and site-specific templates.
   `.two-column__body`, `.two-column__stream`, `.two-column__entry`,
   `.two-column__figure`, and related rail alignment, sticky, and caption classes
 
-Consuming apps own nav labels, hrefs, selected state, external profile URLs,
+Consuming apps own nav item data, the current page key, external profile URLs,
 site-specific templates, concrete page composition, content model selectors,
 images, favicons, and any sizing or styling hooks for their own media and
 content.
